@@ -32,20 +32,22 @@
   <p>Jackson Anderson is the owner and founder of Fitness &amp; Strength LLC and a certified personal trainer who has helped clients build stronger bodies, healthier habits, and lasting confidence since 2020.</p>
   <p>As an athlete, Jackson brings firsthand experience in physique-focused and endurance training. He competed in the USBF Wisconsin Warrior competition in summer 2026 and has completed a multitude of triathlons across the US.</p>
   <p>His coaching philosophy is simple: meet people where they are, build a plan that fits their life, and help them grow into their full potential through consistent, purposeful action.</p>
-</div></div><form class="form" id="inquiry-form"><h3>Start your inquiry</h3><p>Choose the type of support you are looking for.</p><div class="field-row"><div class="field"><label for="name">Name</label><input id="name" name="name" required placeholder="Your name" /></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@email.com" /></div></div><div class="field"><label for="service">Interested in</label><select id="service" name="service"><option>Online coaching</option><option>Private gym training</option><option>Not sure yet</option></select></div><div class="field"><label for="goals">Your goals</label><textarea id="goals" name="goals" placeholder="What would you like to accomplish?"></textarea></div><button class="button" type="submit">Request consultation</button><p class="form-note" id="form-note">This demo form opens your email client with your inquiry details. Replace the contact email in the source before launch.</p></form></div></section>
+</div></div><div class="form">
+  <h3>Start your inquiry</h3>
+  <p>Choose the type of support you are looking for.</p>
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSe9g5JXRJZePHXkJXOJOYGU4CIz6DJPk5nADL2myTO3hc1zEw/viewform?embedded=true"
+    title="Fitness & Strength Consultation Request"
+    width="100%"
+    height="650"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    style="border:0; display:block;">
+    Loading…
+  </iframe>
+</div></div></section>
   </main>
   <footer><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-mark">F+</span>Fitness &amp; Strength</a><span>© 2026 Fitness &amp; Strength LLC. Stronger by design.</span><div class="footer-links"><a href="#services">Coaching</a><a href="#book">Contact</a></div></div></footer>
-  <script>
-    document.getElementById('inquiry-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const service = document.getElementById('service').value;
-      const goals = document.getElementById('goals').value;
-      const subject = encodeURIComponent('Fitness & Strength Consultation Request');
-      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nInterested in: ' + service + '\nGoals: ' + goals);
-      window.location.href = 'mailto:jacksonandersoncorp@gmail.com?subject=' + subject + '&body=' + body;
-    });
-  </script>
 </body>
 </html>
